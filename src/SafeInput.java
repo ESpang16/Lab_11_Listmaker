@@ -15,8 +15,8 @@ public class SafeInput {
                 } else {
                     System.out.println("You must enter a value in the range [" + low + "-" + high + "]:");
                 }
-            }else{System.out.println("You must enter a value in the range [" + low + "-" + high + "]:");
-                trash=pipe.nextLine();
+            }else { trash=pipe.nextLine();
+                System.out.println("Invalid input." + trash + "Please enter a valid integer.");
             }
         } while (!done);
         return result;
