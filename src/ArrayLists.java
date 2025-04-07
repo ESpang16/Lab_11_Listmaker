@@ -3,23 +3,23 @@ import java.util.Scanner;
 public class ArrayLists {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
-        ArrayList<String> list = new ArrayList<>();
+        ArrayList<String> myArrlist = new ArrayList<>();
         boolean quit = false;
         do {
-            displayList(list);
+            displayList(myArrlist);
             String choice = getMenuChoice(in);
             switch (choice) {
                 case "A":
-                    addItem(list, in);
+                    addItem(myArrlist, in);
                     break;
                 case "I":
-                    insertItem(list, in);
+                    insertItem(myArrlist, in);
                     break;
                 case "D":
-                    deleteItem(list, in);
+                    deleteItem(myArrlist, in);
                     break;
                 case "P":
-                    displayList(list);
+                    displayList(myArrlist);
                     break;
                 case "Q":
                     if (SafeInput.getYNConfirm(in, "Are you sure you want to quit?")) {
